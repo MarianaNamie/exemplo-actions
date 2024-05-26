@@ -27,9 +27,7 @@ public class CalculadoraServiceTest {
         CalculadoraService calculadoraService = new CalculadoraService();
         double a = 10;
         double b = 0;
-        var expectedMessage = "400 BAD_REQUEST \"Divisão por zero não permitida\"";
-
-        double resultado = calculadoraService.dividir(a, b);
+        var expectedMessage = "400 BAD_REQUEST \"Divisão por 0 (zero) não permitida\"";
 
         ResponseStatusException exception = assertThrows(
                 ResponseStatusException.class, () -> {
