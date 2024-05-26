@@ -1,5 +1,5 @@
 FROM maven:3-openjdk-17 as builder
-LABEL authors="Mariana Namie"
+LABEL authors="Mariana N."
 
 WORKDIR /build
 
